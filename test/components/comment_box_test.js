@@ -6,6 +6,10 @@ describe ('CommentBox' ,()=> {
       beforeEach(() => {
         component = renderComponent(CommentBox);
       });
+      it('has a text area' ,() => {
+        //const component = renderComponent(CommentBox);
+        expect(component).to.have.class('comment-box')
+        });
 it('has a text area' ,() => {
 //const component = renderComponent(CommentBox);
 expect(component.find('textarea')).to.exist;
