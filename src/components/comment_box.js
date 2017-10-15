@@ -17,7 +17,7 @@ this.setState({comment:event.target.value })
         <form onSubmit = {this.handlesubmit.bind(this)}className ="comment-box">
             <textarea  value ={this.state.comment}
             onChange = {this.onHandleChange.bind(this)}/>
-            <button>Submit comment </button>
+            <button action="submit">Submit comment </button>
             </form>)
     }
 
