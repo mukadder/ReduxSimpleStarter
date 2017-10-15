@@ -7,11 +7,8 @@ describe('App' , () => {
   beforeEach(() => {
     component = renderComponent(App);
   });
-
-  it('renders something', () => {
-    expect(component).to.exist;
-  });
-  it('shows the cooect text ',() =>{
-    expect(component).to.contain('React simple starter')
+it ('shows a coment box ' ,() => {
+  expect (component.find('.comment-box')).to.exist
   })
+  
 });
